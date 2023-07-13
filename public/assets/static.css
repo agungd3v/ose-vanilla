@@ -1,0 +1,84 @@
+body {
+  background: rgba(116, 93, 66, 0.2);
+}
+.landing-wrapper {
+  background-image: url('/images/175383.jpeg');
+  width: 100%;
+  background-position: center top;
+  height: 350px;
+  background-size: cover;
+  position: relative;
+}
+.landing-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.f-1 {
+  font-size: 60px;
+}
+.text-primary {
+  color: rgb(116, 93, 66) !important;
+}
+.bg-primary {
+  background: rgb(116, 93, 66) !important;
+}
+.focus-image {
+  scale: 1;
+  transition: all ease-in-out 0.3s;
+}
+.p-wrap:hover .focus-image {
+  scale: 1.1;
+  transition: all ease-in-out 0.3s;
+}
+.p-wrap {
+  position: relative;
+  cursor: pointer;
+}
+.p-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.p-wrap.opacity::after {
+  background: unset !important;
+}
+.text-sm {
+  font-size: 14px;
+}
+.grid-image-detail {
+  display: grid;
+  grid-template-areas: "a a";
+  gap: 10px;
+  overflow: hidden;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: rgb(116, 93, 66) !important;
+  border-color: rgb(116, 93, 66) !important;
+}
+.btn {
+  font-size: 14px;
+}
+.bg-primary-semi {
+  background-color: rgba(116, 93, 66, 0.2);
+}
+.border-primary {
+  border-color: rgb(116, 93, 66) !important;
+}
+.tabs {
+  cursor: pointer;
+}
+.text-xl {
+  font-size: 60px;
+}
